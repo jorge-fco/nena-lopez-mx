@@ -1,1 +1,10 @@
-# nena-lopez-mx
+# Nena López (Asesor)
+
+## Architecture
+- Home
+- Error 404
+- Cookies
+- Privacy
+- Terms
+
+## References
