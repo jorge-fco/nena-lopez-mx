@@ -1,10 +1,11 @@
 # Nena López (Asesor)
 
-## Architecture
+## 📁 Architecture
 - Home
 - Error 404
 - Cookies
 - Privacy
 - Terms
 
-## References
+## 📎 References
+- https://thelocavore.com/
