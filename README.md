@@ -7,5 +7,12 @@
 - Privacy
 - Terms
 
+## Structure
+- Cover
+
 ## 📎 References
 - https://thelocavore.com/
+
+## Steps
+.gitignore
+.prepos
