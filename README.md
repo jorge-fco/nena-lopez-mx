@@ -10,9 +10,12 @@
 ## Structure
 - Cover
 
+## Tools
+- https://github.com/jgthms/minireset.css
+
 ## 📎 References
 - https://thelocavore.com/
 
 ## Steps
-.gitignore
-.prepos
+- .gitignore
+- .prepos
