@@ -1,12 +1,16 @@
 .DS_Store
-.pug
 desktop.ini
+debug.log
 node_modules/
+
+#= FILES
+assets/scss/
+
+#= TEMPLATES
+*.pug
+config/config.pug
 
 #= PREPOS
 prepros.config
 prepros-6.config
 prepros.cfg
-
-#= FILES
-assets/scss/
