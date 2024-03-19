@@ -680,9 +680,10 @@ https://flickity.metafizzy.co
   --color-purple-rgb:	172,57,25;
   --color-blue:	#3C80BF;
   --color-blue-rgb:	60, 126, 191;
+  --color-green:	#23d160;
+  --color-green-rgb:	35, 209, 96;
   --color-accent:	#f4f3f1;
   --color-divider:	#DCDCDC;
-  --color-green:	#23d160;
   --color-text-placeholder:	#808080;
   --color-selection-text:	#000000;
   --color-selection-background:	#748ffc;
@@ -1052,9 +1053,17 @@ form label span {
 }
 .header__logo a {
   color: var(--color-text);
+  border-radius: 100px;
   display: inline-block;
   position: relative;
+  padding: 6px 14px;
   text-decoration: none;
+  background: var(--color-accent);
+}
+@media (min-width: 1080px) {
+  .header__logo a {
+    padding: 8px 24px;
+  }
 }
 .header__logo a span {
   font-size: 6vw;
@@ -1087,13 +1096,35 @@ form label span {
 }
 .header__button a {
   border-radius: 8px;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   position: relative;
   color: white;
   font-size: 14px;
   background: #028069;
   padding: 10px;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+}
+.header__button a:hover {
+  background: #111B20;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+}
+.header__button a:hover span {
+  color: #028069;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+}
+.header__button a:hover svg {
+  fill: #028069;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
 }
 @media (min-width: 1080px) {
   .header__button a {
@@ -1106,6 +1137,8 @@ form label span {
   margin-right: 6px;
   display: inline-block;
   position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
 }
 @media (min-width: 1080px) {
   .header__button a svg {
@@ -1114,8 +1147,10 @@ form label span {
 }
 .header__button a span {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+  transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
 }
 
 .menu {
@@ -2053,6 +2088,16 @@ form label span {
 }
 @media (min-width: 1080px) {
   .home__cover__text {
+    padding-right: 16.66666%;
+  }
+}
+@media (min-width: 1440px) {
+  .home__cover__text {
+    padding-right: 24.99999%;
+  }
+}
+@media (min-width: 1600px) {
+  .home__cover__text {
     padding-right: 33.33332%;
   }
 }
@@ -2073,6 +2118,16 @@ form label span {
   position: relative;
 }
 .home__cover__text a {
+  color: var(--color-blue);
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.home__cover__text a:hover {
+  text-decoration: none;
+}
+.home__cover__text a[role=button] {
   font-size: 18px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -2094,6 +2149,7 @@ form label span {
   position: relative;
   padding-top: 4em;
   padding-bottom: 4em;
+  background-color: var(--color-text);
 }
 @media (min-width: 1080px) {
   .home__information {
@@ -2191,6 +2247,7 @@ form label span {
   position: relative;
 }
 .home__information__text h4 {
+  color: white;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 4px;
@@ -2211,6 +2268,7 @@ form label span {
   }
 }
 .home__information__text h5 {
+  color: white;
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -2294,20 +2352,30 @@ form label span {
 }
 .home__features__text p {
   color: var(--color-text-light);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   padding: 0px;
   position: relative;
   margin: 0px;
 }
+@media (min-width: 768px) {
+  .home__features__text p {
+    font-size: 18px;
+  }
+}
 @media (min-width: 1080px) {
+  .home__features__text p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1440px) {
   .home__features__text p {
     font-size: 24px;
   }
 }
 .home__features__text p + p {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .home__features__text p span {
   color: var(--color-text);
@@ -2317,9 +2385,24 @@ form label span {
 }
 .home__features__text p strong {
   color: var(--color-text);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 600;
   position: relative;
+}
+@media (min-width: 768px) {
+  .home__features__text p strong {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1080px) {
+  .home__features__text p strong {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .home__features__text p strong {
+    font-size: 32px;
+  }
 }
 
 .home__features__items {
@@ -2329,9 +2412,9 @@ form label span {
 .home__features__items ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
+  -ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 32px;
   grid-row-gap: 32px;
   list-style: none;
   margin: 0px;
@@ -2341,15 +2424,15 @@ form label span {
 @media (min-width: 1080px) {
   .home__features__items ul {
     grid-row-gap: 0px;
-    grid-column-gap: 64px;
+    grid-column-gap: 34px;
   }
 }
 .home__features__items ul li {
-  -ms-grid-column-span: 12;
-  grid-column-end: span 12;
+  -ms-grid-column-span: 6;
+  grid-column-end: span 6;
   text-align: center;
   position: relative;
-  padding: 32px 14px;
+  padding: 26px 12px;
   border-radius: 16px;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
@@ -2357,8 +2440,9 @@ form label span {
 }
 @media (min-width: 1080px) {
   .home__features__items ul li {
-    -ms-grid-column-span: 4;
-    grid-column-end: span 4;
+    padding: 32px 14px;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
   }
 }
 .home__features__items ul li:nth-child(1) span {
@@ -2374,9 +2458,15 @@ form label span {
   fill: var(--color-yellow);
 }
 .home__features__items ul li:nth-child(3) span {
-  background-color: rgba(var(--color-purple-rgb), 0.16);
+  background-color: rgba(var(--color-green-rgb), 0.16);
 }
 .home__features__items ul li:nth-child(3) span svg {
+  fill: var(--color-green);
+}
+.home__features__items ul li:nth-child(4) span {
+  background-color: rgba(var(--color-purple-rgb), 0.16);
+}
+.home__features__items ul li:nth-child(4) span svg {
   fill: var(--color-purple);
 }
 .home__features__items ul li span {
@@ -2405,21 +2495,26 @@ form label span {
   position: relative;
 }
 .home__features__items ul li p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 16px;
   padding: 0px;
   position: relative;
 }
+@media (min-width: 768px) {
+  .home__features__items ul li p {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1080px) {
   .home__features__items ul li p {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1440px) {
   .home__features__items ul li p {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .home__features__items ul li p data {
