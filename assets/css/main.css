@@ -662,9 +662,10 @@ https://flickity.metafizzy.co
 }
 
 :root {
-  --font-title:	circe-slab-b, serif;
-  --font-text:	"Outfit", sans-serif;
-  --font-mono:	"DM Mono", monospace;
+  --font-title:	"PP Radio Grotesk";
+  --font-text:	"PP Mori";
+  --font-serif:	"PP Editorial Old";
+  --font-mono:	"PP Fraktion Mono";
   --color-text:	#121212;
   --color-text-light:	#a1a1a1;
   --color-text-dark:	#000000;
@@ -690,6 +691,154 @@ https://flickity.metafizzy.co
   --color-selection-background:	#748ffc;
 }
 
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-Black.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-RegularItalic.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-Ultralight.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-Ultralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-Regular.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-BlackItalic.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("../fonts/PPRadioGrotesk-UltralightItalic.woff2") format("woff2"), url("../fonts/PPRadioGrotesk-UltralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("../fonts/PPMori-SemiBoldItalic.eot");
+  src: url("../fonts/PPMori-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PPMori-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PPMori-SemiBoldItalic.woff") format("woff"), url("../fonts/PPMori-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("../fonts/PPMori-Regular.eot");
+  src: url("../fonts/PPMori-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PPMori-Regular.woff2") format("woff2"), url("../fonts/PPMori-Regular.woff") format("woff"), url("../fonts/PPMori-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("../fonts/PPMori-RegularItalic.eot");
+  src: url("../fonts/PPMori-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PPMori-RegularItalic.woff2") format("woff2"), url("../fonts/PPMori-RegularItalic.woff") format("woff"), url("../fonts/PPMori-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("../fonts/PPMori-SemiBold.eot");
+  src: url("../fonts/PPMori-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PPMori-SemiBold.woff2") format("woff2"), url("../fonts/PPMori-SemiBold.woff") format("woff"), url("../fonts/PPMori-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../fonts/PPFraktionMono-Bold.eot");
+  src: url("../fonts/PPFraktionMono-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PPFraktionMono-Bold.woff2") format("woff2"), url("../fonts/PPFraktionMono-Bold.woff") format("woff"), url("../fonts/PPFraktionMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../fonts/PPFraktionMono-BoldItalic.eot");
+  src: url("../fonts/PPFraktionMono-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PPFraktionMono-BoldItalic.woff2") format("woff2"), url("../fonts/PPFraktionMono-BoldItalic.woff") format("woff"), url("../fonts/PPFraktionMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../fonts/PPFraktionMono-Regular.eot");
+  src: url("../fonts/PPFraktionMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PPFraktionMono-Regular.woff2") format("woff2"), url("../fonts/PPFraktionMono-Regular.woff") format("woff"), url("../fonts/PPFraktionMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../fonts/PPFraktionMono-RegularItalic.eot");
+  src: url("../fonts/PPFraktionMono-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PPFraktionMono-RegularItalic.woff2") format("woff2"), url("../fonts/PPFraktionMono-RegularItalic.woff") format("woff"), url("../fonts/PPFraktionMono-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-Ultralight.woff2") format("woff2"), url("../fonts/PPEditorialOld-Ultralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-Italic.woff2") format("woff2"), url("../fonts/PPEditorialOld-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-Ultrabold.woff2") format("woff2"), url("../fonts/PPEditorialOld-Ultrabold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-UltraboldItalic.woff2") format("woff2"), url("../fonts/PPEditorialOld-UltraboldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-Regular.woff2") format("woff2"), url("../fonts/PPEditorialOld-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Editorial Old";
+  src: url("../fonts/PPEditorialOld-UltralightItalic.woff2") format("woff2"), url("../fonts/PPEditorialOld-UltralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -706,10 +855,11 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-weight: 400;
+  font-family: var(--font-text);
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  font-display: swap;
   line-height: 1.5;
   width: 100%;
   margin: 0px;
@@ -722,7 +872,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-family: var(--font-title);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   position: relative;
   line-height: 1.2;
   padding: 0px;
@@ -736,13 +889,16 @@ a {
 }
 
 p {
-  font-weight: 400;
+  font-family: var(--font-text);
+  font-weight: normal;
 }
 
 address {
+  font-family: var(--font-text);
   font-style: normal;
   margin: 0px;
   padding: 0px;
+  position: relative;
 }
 
 svg {
@@ -1067,13 +1223,13 @@ form label span {
   }
 }
 .header__logo a span {
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 600;
   position: relative;
 }
 @media (min-width: 1080px) {
   .header__logo a span {
-    font-size: 2vw;
+    font-size: 1.6vw;
   }
 }
 .header__logo a sup {
@@ -1940,13 +2096,14 @@ form label span {
 }
 .home__cover__text h1 {
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 900;
   position: relative;
   margin-bottom: 6px;
 }
 .home__cover__text h2 {
   color: var(--color-secundary);
-  font-weight: 500;
+  font-family: var(--font-serif);
+  font-weight: normal;
   position: relative;
   margin-bottom: 16px;
 }
@@ -1968,6 +2125,7 @@ form label span {
 }
 .home__cover__text a[role=button] {
   font-size: 18px;
+  font-weight: 600;
   border: 1px solid transparent;
   border-radius: 8px;
   display: -webkit-inline-box;
@@ -2031,8 +2189,8 @@ form label span {
   display: block;
   position: relative;
   overflow: hidden;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
 }
 .home__information__image figure {
   width: 100%;
@@ -2091,7 +2249,7 @@ form label span {
 .home__information__text h4 {
   color: white;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 4px;
 }
 @media (min-width: 768px) {
@@ -2111,8 +2269,9 @@ form label span {
 }
 .home__information__text h5 {
   color: white;
+  font-family: var(--font-serif);
   font-size: 26px;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 8px;
 }
 @media (min-width: 1080px) {
@@ -2123,7 +2282,7 @@ form label span {
 .home__information__text p {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
 }
 .home__information__text p strong {
   color: var(--color-yellow);
@@ -2514,17 +2673,7 @@ form label span {
 .home__location__map__text {
   width: 100%;
   position: relative;
-  padding-right: 16.66666%;
-}
-@media (min-width: 1080px) {
-  .home__location__map__text {
-    padding-right: 16.66666%;
-  }
-}
-@media (min-width: 1440px) {
-  .home__location__map__text {
-    padding-right: 24.99999%;
-  }
+  padding-right: 8.33333%;
 }
 .home__location__map__text p {
   color: var(--color-text);
@@ -2732,6 +2881,7 @@ form label span {
 
 .image__caption, .home__cover__image figure figcaption, .home__information__image figure figcaption, .home__location__thumb figure figcaption {
   color: var(--color-text-light);
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 400;
   display: block;
