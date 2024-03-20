@@ -668,9 +668,9 @@ https://flickity.metafizzy.co
   --color-text:	#121212;
   --color-text-light:	#a1a1a1;
   --color-text-dark:	#000000;
-  --color-primary:	#005d79;
+  --color-primary:	#004e35;
   --color-primary-dark:	#1C2B34;
-  --color-secundary:	#a3defc;
+  --color-secundary:	#97c64a;
   --color-secundary-dark:	#4474C1;
   --color-red:	#ff4538;
   --color-red-rgba:	rgba(255, 69, 56, 0.15);
@@ -683,7 +683,7 @@ https://flickity.metafizzy.co
   --color-green:	#23d160;
   --color-green-rgb:	35, 209, 96;
   --color-accent:	#f4f3f1;
-  --color-divider:	#DCDCDC;
+  --color-divider:	#fbf4eb;
   --color-text-placeholder:	#808080;
   --color-selection-text:	#000000;
   --color-selection-background:	#748ffc;
@@ -2057,12 +2057,12 @@ form label span {
   position: relative;
   padding-top: 4em;
   padding-bottom: 4em;
+  background-color: var(--color-accent);
 }
 
 .home__cover__image {
   display: block;
   position: relative;
-  border-radius: 16px;
   overflow: hidden;
 }
 .home__cover__image figure {
@@ -2072,6 +2072,17 @@ form label span {
   padding: 0px;
   position: relative;
 }
+.home__cover__image figure figcaption {
+  color: var(--color-text-light);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  position: relative;
+  margin-top: 6px;
+}
 .home__cover__image figure img {
   width: 100%;
   margin: 0 auto;
@@ -2079,6 +2090,7 @@ form label span {
   outline: 0px;
   padding: 0px;
   position: relative;
+  border-radius: 16px;
 }
 
 .home__cover__text {
@@ -2149,7 +2161,7 @@ form label span {
   position: relative;
   padding-top: 4em;
   padding-bottom: 4em;
-  background-color: var(--color-text);
+  background-color: var(--color-primary);
 }
 @media (min-width: 1080px) {
   .home__information {
@@ -2238,11 +2250,11 @@ form label span {
   border: 0px;
   border-radius: 100%;
   position: relative;
-  background-color: rgba(var(--color-blue-rgb), 0.1);
+  background-color: white;
 }
 .home__information__text span[role=icon] svg {
   fill: var(--color-blue);
-  width: 16px;
+  width: 18px;
   display: block;
   position: relative;
 }
@@ -2279,12 +2291,12 @@ form label span {
   }
 }
 .home__information__text p {
-  color: var(--color-text-light);
+  color: white;
   font-size: 18px;
   font-weight: 400;
 }
 .home__information__text p strong {
-  color: var(--color-purple);
+  color: var(--color-yellow);
   font-weight: 700;
   display: inline-block;
   position: relative;
@@ -2302,7 +2314,7 @@ form label span {
   position: relative;
   padding-top: 4em;
   padding-bottom: 4em;
-  background: var(--color-accent);
+  background: var(--color-secundary);
 }
 @media (min-width: 1080px) {
   .home__features {
@@ -2322,23 +2334,6 @@ form label span {
     text-align: center;
   }
 }
-.home__features__title h3 {
-  color: #073823;
-  font-size: 44px;
-  font-weight: 600;
-  position: relative;
-}
-@media (min-width: 1080px) {
-  .home__features__title h3 {
-    font-size: 54px;
-  }
-}
-@media (min-width: 1440px) {
-  .home__features__title h3 {
-    font-size: 64px;
-  }
-}
-
 .home__features__text {
   width: 100%;
   position: relative;
@@ -2351,7 +2346,7 @@ form label span {
   }
 }
 .home__features__text p {
-  color: var(--color-text-light);
+  color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -2378,13 +2373,13 @@ form label span {
   margin-top: 12px;
 }
 .home__features__text p span {
-  color: var(--color-text);
+  color: var(--color-primary);
   font-weight: 500;
   display: inline-block;
   position: relative;
 }
 .home__features__text p strong {
-  color: var(--color-text);
+  color: var(--color-primary);
   font-size: 26px;
   font-weight: 600;
   position: relative;
@@ -2412,10 +2407,10 @@ form label span {
 .home__features__items ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
+  -ms-grid-columns: 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -2518,6 +2513,195 @@ form label span {
   }
 }
 .home__features__items ul li p data {
+  display: block;
+  position: relative;
+}
+
+.home__location {
+  width: 100%;
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+@media (min-width: 1080px) {
+  .home__location {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+
+.home__location__title {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+@media (min-width: 1080px) {
+  .home__location__title {
+    margin-bottom: 4em;
+  }
+}
+.home__location__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 1080px) {
+  .home__location__row {
+    grid-column-gap: 64px;
+  }
+}
+
+.home__location__column {
+  position: relative;
+}
+.home__location__column:nth-child(1) {
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+}
+@media (min-width: 1080px) {
+  .home__location__column:nth-child(1) {
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+  }
+}
+.home__location__column:nth-child(2) {
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+}
+@media (min-width: 1080px) {
+  .home__location__column:nth-child(2) {
+    -ms-grid-column-span: 7;
+    grid-column-end: span 7;
+  }
+}
+
+.home__location__text {
+  width: 100%;
+  position: relative;
+  padding-right: 8.33333%;
+  text-align: left;
+}
+@media (min-width: 1080px) {
+  .home__location__text {
+    padding-right: 8.33333%;
+  }
+}
+.home__location__text h4 {
+  color: var(--color-secundary);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+@media (min-width: 1080px) {
+  .home__location__text h4 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .home__location__text h4 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1600px) {
+  .home__location__text h4 {
+    font-size: 32px;
+  }
+}
+.home__location__text p {
+  font-size: 16px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .home__location__text p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1080px) {
+  .home__location__text p {
+    font-size: 20px;
+  }
+}
+.home__location__text p strong {
+  font-weight: 700;
+  position: relative;
+}
+.home__location__text p + p {
+  margin-top: 12px;
+}
+
+.home__location__thumb {
+  width: 100%;
+  position: relative;
+}
+.home__location__thumb figure {
+  width: 100%;
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.home__location__thumb img {
+  width: 100%;
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  border-radius: 16px;
+}
+
+.home__location__map {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-top: 2em;
+}
+@media (min-width: 768px) {
+  .home__location__map {
+    margin-top: 4em;
+  }
+}
+@media (min-width: 1080px) {
+  .home__location__map {
+    margin-top: 6em;
+  }
+}
+.home__location__map iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0px;
+  outline: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+.home__location__map__text {
+  width: 100%;
+  position: relative;
+}
+.home__location__map__text p {
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.home__location__map__text p a {
+  color: var(--color-secundary);
+  position: relative;
+}
+.home__location__map__text p span {
+  color: var(--color-text-light);
+  font-size: 16px;
+  font-weight: 300;
   display: block;
   position: relative;
 }
@@ -2641,6 +2825,23 @@ form label span {
 .page__error__text a {
   margin-top: 45px;
   position: relative;
+}
+
+.page__section__title, .home__features__title h3, .home__location__title h3 {
+  color: var(--color-primary);
+  font-size: 44px;
+  font-weight: 600;
+  position: relative;
+}
+@media (min-width: 1080px) {
+  .page__section__title, .home__features__title h3, .home__location__title h3 {
+    font-size: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  .page__section__title, .home__features__title h3, .home__location__title h3 {
+    font-size: 64px;
+  }
 }
 
 .privacy {
