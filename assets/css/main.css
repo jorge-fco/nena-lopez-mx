@@ -1240,7 +1240,9 @@ form label span {
 }
 .header__logo a sup {
   color: white;
+  font-family: var(--font-text);
   font-size: 16px;
+  top: 0px;
   font-weight: 400;
   position: relative;
 }
@@ -1636,7 +1638,7 @@ form label span {
   transition: all 0.4s cubic-bezier(0.3, 0, 0.2, 1);
 }
 
-.page__section {
+.page__section, .home__amenities, .home__location, .home__features, .home__information {
   width: 100%;
   position: relative;
   padding-top: 6em;
@@ -1748,7 +1750,7 @@ form label span {
 }
 .footer__contact p {
   color: var(--color-text-light);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0px;
   padding: 0px;
@@ -1756,12 +1758,12 @@ form label span {
 }
 @media (min-width: 1080px) {
   .footer__contact p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1440px) {
   .footer__contact p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .footer__contact p + p {
@@ -1789,12 +1791,12 @@ form label span {
 }
 @media (min-width: 1080px) {
   .footer__contact p a {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 @media (min-width: 1440px) {
   .footer__contact p a {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .footer__contact p a:hover {
@@ -2021,12 +2023,11 @@ form label span {
   width: 100%;
   position: relative;
   text-align: left;
-  margin-top: 32px;
   padding-top: 32px;
   border-top: 1px solid var(--color-divider);
 }
 .footer__copyright p {
-  color: var(--color-text);
+  color: var(--color-text-light);
   font-size: 13px;
   font-weight: 400;
 }
@@ -2177,17 +2178,7 @@ form label span {
 }
 
 .home__information {
-  width: 100%;
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
   background-color: var(--color-primary);
-}
-@media (min-width: 1080px) {
-  .home__information {
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
 }
 
 .home__information__row {
@@ -2221,11 +2212,21 @@ form label span {
 
 .home__information__image {
   width: 83.33334%;
+  z-index: 10;
   display: block;
   position: relative;
-  overflow: hidden;
+}
+.home__information__image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -12px;
+  right: -12px;
+  position: absolute;
+  z-index: 4;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
+  background-color: var(--color-secundary);
 }
 @media (min-width: 1080px) {
   .home__information__image {
@@ -2235,6 +2236,7 @@ form label span {
 .home__information__image figure {
   width: 100%;
   display: block;
+  z-index: 15;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -2249,6 +2251,8 @@ form label span {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
 }
 
 .home__information__text {
@@ -2339,23 +2343,7 @@ form label span {
 }
 
 .home__features {
-  width: 100%;
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
   background-color: rgba(151, 198, 74, 0.1);
-}
-@media (min-width: 1080px) {
-  .home__features {
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
-}
-@media (min-width: 1440px) {
-  .home__features {
-    padding-top: 8em;
-    padding-bottom: 8em;
-  }
 }
 
 .home__features__title {
@@ -2552,25 +2540,6 @@ form label span {
   position: relative;
 }
 
-.home__location {
-  width: 100%;
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
-}
-@media (min-width: 1080px) {
-  .home__location {
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
-}
-@media (min-width: 1440px) {
-  .home__location {
-    padding-top: 8em;
-    padding-bottom: 8em;
-  }
-}
-
 .home__location__title {
   width: 100%;
   position: relative;
@@ -2688,6 +2657,7 @@ form label span {
 
 .home__location__thumb {
   width: 100%;
+  overflow: hidden;
   position: relative;
 }
 .home__location__thumb figure {
@@ -2916,19 +2886,38 @@ form label span {
   position: relative;
 }
 
-.page__section__title, .home__features__title h3, .home__location__title h3 {
+.page__section, .home__amenities, .home__information, .home__features, .home__location {
+  width: 100%;
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+@media (min-width: 1080px) {
+  .page__section, .home__amenities, .home__information, .home__features, .home__location {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+@media (min-width: 1440px) {
+  .page__section, .home__amenities, .home__information, .home__features, .home__location {
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+}
+
+.page__section__title, .home__amenities__title h3, .home__features__title h3, .home__location__title h3 {
   color: var(--color-primary);
   font-size: 44px;
   font-weight: 900;
   position: relative;
 }
 @media (min-width: 1080px) {
-  .page__section__title, .home__features__title h3, .home__location__title h3 {
+  .page__section__title, .home__amenities__title h3, .home__features__title h3, .home__location__title h3 {
     font-size: 54px;
   }
 }
 @media (min-width: 1440px) {
-  .page__section__title, .home__features__title h3, .home__location__title h3 {
+  .page__section__title, .home__amenities__title h3, .home__features__title h3, .home__location__title h3 {
     font-size: 64px;
   }
 }
@@ -2936,7 +2925,7 @@ form label span {
 .image__caption, .home__cover__image figure figcaption, .home__information__image figure figcaption, .home__location__thumb figure figcaption {
   color: var(--color-text-light);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   display: block;
   text-align: center;
@@ -2944,6 +2933,11 @@ form label span {
   padding: 0px;
   position: relative;
   margin-top: 6px;
+}
+@media (min-width: 1080px) {
+  .image__caption, .home__cover__image figure figcaption, .home__information__image figure figcaption, .home__location__thumb figure figcaption {
+    font-size: 12px;
+  }
 }
 
 .privacy {
@@ -3303,4 +3297,120 @@ form label span {
   bottom: 0;
   position: absolute;
   overflow: hidden;
+}
+
+.home__amenities {
+  background: rgba(var(--color-blue-rgb), 0.1);
+}
+
+.home__amenities__title {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  margin-bottom: 2em;
+}
+@media (min-width: 1080px) {
+  .home__amenities__title {
+    margin-bottom: 4em;
+  }
+}
+.home__amenities__list {
+  width: 100%;
+  position: relative;
+}
+.home__amenities__list ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 1080px) {
+  .home__amenities__list ul {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+}
+.home__amenities__list ul li {
+  -ms-grid-column-span: 6;
+  grid-column-end: span 6;
+  display: block;
+  padding: 12px 12px;
+  position: relative;
+  border-radius: 16px;
+  background: white;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .home__amenities__list ul li {
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    padding: 32px 32px;
+  }
+}
+.home__amenities__list ul li p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .home__amenities__list ul li p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1080px) {
+  .home__amenities__list ul li p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .home__amenities__list ul li p {
+    font-size: 22px;
+  }
+}
+
+.home__amenities__list__item__thumb {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+@media (min-width: 1080px) {
+  .home__amenities__list__item__thumb {
+    margin-bottom: 32px;
+  }
+}
+.home__amenities__list__item__thumb figure {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.home__amenities__list__item__thumb figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border: 0px;
+  border-radius: 16px;
+  outline: 0px;
 }
