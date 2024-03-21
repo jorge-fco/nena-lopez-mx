@@ -1240,7 +1240,7 @@ form label span {
 }
 .header__logo a sup {
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   position: relative;
 }
@@ -1266,7 +1266,7 @@ form label span {
   text-decoration: none;
   position: relative;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   background: #028069;
   padding: 10px;
   -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
@@ -1286,6 +1286,11 @@ form label span {
   fill: #028069;
   -webkit-transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
   transition: all 0.3s cubic-bezier(0.41, 0, 0.13, 1.005);
+}
+@media (min-width: 768px) {
+  .header__button a {
+    font-size: 14px;
+  }
 }
 @media (min-width: 1080px) {
   .header__button a {
@@ -1700,19 +1705,19 @@ form label span {
 }
 .footer__item h4 {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .footer__item h4 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 18px;
   }
 }
 @media (min-width: 1080px) {
   .footer__item h4 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
   }
 }
@@ -1749,22 +1754,48 @@ form label span {
   padding: 0px;
   position: relative;
 }
+@media (min-width: 1080px) {
+  .footer__contact p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__contact p {
+    font-size: 22px;
+  }
+}
 .footer__contact p + p {
   margin-top: 16px;
 }
 .footer__contact p a {
   color: var(--color-text-light);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1;
   border-radius: 68px;
   border: 1px solid var(--color-text-light);
   margin-left: 6px;
-  display: inline-block;
-  padding: 2px 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 8px;
   position: relative;
   text-decoration: none;
   -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.2, 1);
   transition: all 0.4s cubic-bezier(0.3, 0, 0.2, 1);
+}
+@media (min-width: 1080px) {
+  .footer__contact p a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__contact p a {
+    font-size: 22px;
+  }
 }
 .footer__contact p a:hover {
   color: var(--color-primary);
@@ -2189,7 +2220,7 @@ form label span {
 }
 
 .home__information__image {
-  width: 91.66667%;
+  width: 83.33334%;
   display: block;
   position: relative;
   overflow: hidden;
@@ -2627,6 +2658,7 @@ form label span {
   }
 }
 .home__location__text p {
+  color: var(--color-text-light);
   font-size: 16px;
   position: relative;
 }
@@ -2646,6 +2678,7 @@ form label span {
   }
 }
 .home__location__text p strong {
+  color: var(--color-text);
   font-weight: 600;
   position: relative;
 }
