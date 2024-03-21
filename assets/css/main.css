@@ -893,6 +893,11 @@ p {
   font-weight: normal;
 }
 
+strong {
+  font-family: var(--font-text);
+  font-weight: 600;
+}
+
 address {
   font-family: var(--font-text);
   font-style: normal;
@@ -1223,21 +1228,20 @@ form label span {
   }
 }
 .header__logo a span {
+  font-family: var(--font-title);
   font-size: 4vw;
-  font-weight: 600;
+  font-weight: 900;
   position: relative;
 }
 @media (min-width: 1080px) {
   .header__logo a span {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
   }
 }
 .header__logo a sup {
   color: white;
   font-size: 12px;
   font-weight: 400;
-  left: -4px;
-  top: -12px;
   position: relative;
 }
 @media (min-width: 1080px) {
@@ -1697,7 +1701,7 @@ form label span {
 .footer__item h4 {
   color: white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
@@ -1750,7 +1754,7 @@ form label span {
 }
 .footer__contact p a {
   color: var(--color-text-light);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   border-radius: 68px;
   border: 1px solid var(--color-text-light);
@@ -2185,12 +2189,17 @@ form label span {
 }
 
 .home__information__image {
-  width: 100%;
+  width: 91.66667%;
   display: block;
   position: relative;
   overflow: hidden;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
+}
+@media (min-width: 1080px) {
+  .home__information__image {
+    width: 91.66667%;
+  }
 }
 .home__information__image figure {
   width: 100%;
@@ -2286,7 +2295,7 @@ form label span {
 }
 .home__information__text p strong {
   color: var(--color-yellow);
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
   position: relative;
 }
@@ -2309,6 +2318,12 @@ form label span {
   .home__features {
     padding-top: 6em;
     padding-bottom: 6em;
+  }
+}
+@media (min-width: 1440px) {
+  .home__features {
+    padding-top: 8em;
+    padding-bottom: 8em;
   }
 }
 
@@ -2363,7 +2378,7 @@ form label span {
 }
 .home__features__text p span {
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   position: relative;
 }
@@ -2480,9 +2495,9 @@ form label span {
 }
 .home__features__items ul li p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
-  margin-top: 16px;
+  margin-top: 22px;
   padding: 0px;
   position: relative;
 }
@@ -2516,6 +2531,12 @@ form label span {
   .home__location {
     padding-top: 6em;
     padding-bottom: 6em;
+  }
+}
+@media (min-width: 1440px) {
+  .home__location {
+    padding-top: 8em;
+    padding-bottom: 8em;
   }
 }
 
@@ -2586,7 +2607,7 @@ form label span {
 }
 .home__location__text h4 {
   color: var(--color-secundary);
-  font-weight: 600;
+  font-weight: 900;
   font-size: 30px;
   margin-bottom: 24px;
 }
@@ -2625,7 +2646,7 @@ form label span {
   }
 }
 .home__location__text p strong {
-  font-weight: 700;
+  font-weight: 600;
   position: relative;
 }
 .home__location__text p + p {
@@ -2709,7 +2730,7 @@ form label span {
 .home__location__map__text p span {
   color: var(--color-text-light);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   position: relative;
   margin-bottom: 6px;
@@ -2865,7 +2886,7 @@ form label span {
 .page__section__title, .home__features__title h3, .home__location__title h3 {
   color: var(--color-primary);
   font-size: 44px;
-  font-weight: 600;
+  font-weight: 900;
   position: relative;
 }
 @media (min-width: 1080px) {
