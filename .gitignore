@@ -4,6 +4,7 @@ debug.log
 node_modules/
 
 #= FILES
+assets/js/
 assets/scss/
 
 #= TEMPLATES

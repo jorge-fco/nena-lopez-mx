@@ -2137,7 +2137,7 @@ form label span {
   margin-bottom: 6px;
 }
 .home__cover__text h2 {
-  color: var(--color-secundary);
+  color: var(--color-text);
   font-family: var(--font-serif);
   font-weight: normal;
   position: relative;
@@ -3314,6 +3314,18 @@ form label span {
     margin-bottom: 4em;
   }
 }
+.home__amenities__title h4 {
+  color: var(--color-text-light);
+  font-family: var(--font-title);
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  border-left: 1px solid var(--color-text-light);
+  padding-left: 10px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
 .home__amenities__list {
   width: 100%;
   position: relative;
